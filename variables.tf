@@ -57,7 +57,7 @@ variable "ebs_block_device" {
 
 variable "extra_tags" {
   type = list(object({
-    name                = string,
+    key                 = string,
     propagate_at_launch = bool,
   }))
   default = []
