@@ -59,6 +59,7 @@ variable "extra_tags" {
   type = list(object({
     key                 = string,
     propagate_at_launch = bool,
+    value = any,
   }))
   default = []
 }
